@@ -2,10 +2,10 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import IntroScreen from "@/components/screens/IntroScreen";
-import ComplimentsScreen from "@/components/screens/ComplimentsScreen";
-import MessageScreen from "@/components/screens/MessageScreen";
-import FinalScreen from "@/components/screens/FinalScreen";
+import IntroScreen from "../components/screens/IntroScreen";
+import ComplimentsScreen from "../components/screens/ComplimentsScreen";
+import MessageScreen from "../components/screens/MessageScreen";
+import FinalScreen from "../components/screens/FinalScreen";
 
 export default function Home() {
   const [currentScreen, setCurrentScreen] = useState(0)
