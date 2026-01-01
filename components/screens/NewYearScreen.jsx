@@ -1,3 +1,5 @@
+"use client"
+
 import { motion, AnimatePresence } from "framer-motion"
 import { useState } from "react"
 import Image from "next/image"
@@ -16,13 +18,14 @@ export default function NewYearScreen() {
       <div className="relative w-64 h-64 mb-10">
         {/* Bottom image */}
         <Image
-          src="/images/pic2.jpg"
+          src="/images/image2.jpg"
           fill
           className="rounded-xl object-cover"
           alt="second"
+          unoptimized
         />
 
-        {/* Top image (slide up to remove) */}
+        {/* Top image */}
         <AnimatePresence>
           {showTop && (
             <motion.div
@@ -35,10 +38,11 @@ export default function NewYearScreen() {
               exit={{ y: -400, opacity: 0 }}
             >
               <Image
-                src="/images/pic1.jpg"
+                src="/images/image1.jpg"
                 fill
                 className="rounded-xl object-cover"
                 alt="first"
+                unoptimized
               />
             </motion.div>
           )}
