@@ -61,7 +61,7 @@ export default function MessageScreen({ onNext }) {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
             >
-                A little note for you
+                A little note for my cutie pie 💖
             </motion.h2>
 
             <motion.div
