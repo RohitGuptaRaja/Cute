@@ -56,7 +56,8 @@ export default function ComplimentsScreen({ onNext }) {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.25 }}
           >
-            Just for you
+            Just for my 
+              cutie🥰
           </motion.h2>
 
         </div>
