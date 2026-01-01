@@ -23,7 +23,7 @@ export default function NewYearScreen() {
           alt="second"
           fill
           priority
-          className="rounded-xl object-cover"
+          className="rounded-xl object-contain bg-black"
         />
 
         {/* Top image */}
@@ -46,7 +46,7 @@ export default function NewYearScreen() {
                 alt="first"
                 fill
                 priority
-                className="rounded-xl object-cover"
+                className="rounded-xl object-contain bg-black"
               />
             </motion.div>
           )}
