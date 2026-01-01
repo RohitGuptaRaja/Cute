@@ -1,6 +1,3 @@
-
-"use client"
-
 import { motion, AnimatePresence } from "framer-motion"
 import { useState } from "react"
 
@@ -15,33 +12,29 @@ export default function NewYearScreen() {
       </h2>
 
       {/* IMAGE STACK */}
-      <div className="relative w-64 h-64 mb-10">
+      <div className="relative w-64 h-64 mb-10 rounded-xl overflow-hidden">
 
         {/* Bottom image */}
         <img
           src="/image2.jpg"
-          className="absolute inset-0 w-full h-full object-cover rounded-xl"
           alt="second"
+          className="absolute inset-0 w-full h-full object-cover"
         />
 
         {/* Top image */}
         <AnimatePresence>
           {showTop && (
-            <motion.div
-              className="absolute inset-0"
+            <motion.img
+              src="/image1.jpg"
+              alt="first"
+              className="absolute inset-0 w-full h-full object-cover cursor-grab"
               drag="y"
               dragConstraints={{ top: -200, bottom: 0 }}
               onDragEnd={(e, info) => {
                 if (info.offset.y < -120) setShowTop(false)
               }}
               exit={{ y: -400, opacity: 0 }}
-            >
-              <img
-                src="/image1.jpg"
-                className="w-full h-full object-cover rounded-xl"
-                alt="first"
-              />
-            </motion.div>
+            />
           )}
         </AnimatePresence>
 
