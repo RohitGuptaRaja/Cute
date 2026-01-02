@@ -1,6 +1,6 @@
 import { Quicksand } from "next/font/google"
 import "./globals.css"
-import BackgroundMusic from "@/components/BackgroundMusic"
+import BackgroundMusic from "../components/BackgroundMusic"
 
 const quicksand = Quicksand({
   subsets: ["latin"],
